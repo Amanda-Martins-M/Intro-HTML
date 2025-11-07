@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+</head>
+
+<body>
+    <h1>Conhecendo o elemento de imagem</h1>
+
+    <hr>
+    <img src="img/sanic-weird.webp" alt="imagem do personagem Sonic grande alto estranho parado">
+    <img src="img/sanic-weird.webp" alt="imagem do personagem Sonic pitico achatado estranho parado" width="100"
+        height="50">
+
+    <hr>
+
+    <h2>Outras abordagens com imagens</h2>
+    <h3>Figure</h3>
+    <p>Serve para agrupar uma imagem e a sua legenda.</p>
+
+    <figure>
+        <!-- Embora esse seja seu uso comum, não necessita só de imagens para funcionar, pode ter outras funções, agrupa conteúdos ilustrativos.-->
+        <img src="https://plus.unsplash.com/premium_photo-1756154482074-b8e07383243f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1147"
+            alt="Céu azul com uma mão segurando um boné vermelho." height="250" widht="250">
+
+        <!-- Legenda fotos.-->
+
+        <hr>
+
+    </figure>
+
+    <h3>Picture</h3>
+    <p>Responsividade = capacidade da foto se adequar a diferentes dispositivos automaticamente.</p>
+<picture>
+    <source media="(min-width: 150px)" srcset="img/sanic-weird.webp">
+
+    <source media="(min-width: 800px)" srcset="img/sanic-weird.webp" type="image/png"/>
+
+    <source media="(min-width: 400px)" srcset="img/sanic-weird.webp" type="image/png"/>
+
+    <img src="img/sanic-weird.webp"  />
+
+    <!-- Fallback = caso as imagens falhem ele aplica um conteúdo alternativo para exibir.-->
+
+</picture>
+
+
+</body>
+
+</html>
